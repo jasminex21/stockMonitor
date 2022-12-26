@@ -25,7 +25,7 @@ server = function(input, output, session) {
     chartSeries(tabOne(),
                 name = input$symbol,
                 theme = "white", 
-                TA = "addVo()",
+                TA = gsub(",", ";", toString(c("addVo()", input$indicators))),
                 type = if (input$candlestick) {
                   "candlestick"
                 } else { "line" })
