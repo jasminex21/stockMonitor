@@ -1,6 +1,6 @@
 # stockMonitor
 
-A Shiny app for monitoring stocks - the *View Stocks* panel is for looking at the market activity of a single stock, and the *Analyse Stocks* panel allows you to compare up to 7 stocks simultaneously over a time frame.
+A Shiny app for monitoring stocks - the *View Stocks* panel is for looking at the market activity of a single stock, and the *Analyse Stocks* panel allows you to compare up to 7 stocks simultaneously over a time frame. The app can be run via the runGitHub() command in RStudio or by using [this url](https://jasminex21.shinyapps.io/stockMonitor/?_ga=2.123234882.898294494.1671934171-146612779.1670194509). 
 
 ### The *View Stocks* Panel
 A finance web app at first view may look intimidating, so there is an "About this Page" button that will introduce users to each of the controls and briefly explain what they will show. For the more advanced user, a variety of technical indicators have been made available that will provide detailed insight into market patterns.
