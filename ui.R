@@ -29,6 +29,18 @@ ui = navbarPage(theme = shinytheme("spacelab"),
                                                       value = F), 
                                                  data.step = 2, 
                                                  data.intro = "Candlestick plots should mainly be used when looking at short time frames (i.e., days, not years). A green candlestick means that the stock's price increased during the day, and an orange candlestick means that the price decreased."),
+                                        checkboxGroupInput("indicators", 
+                                                           label = "Select technical indicators", 
+                                                           choices = c("Bollinger Bands" = "addBBands()", 
+                                                                       "Commodity Channel Index" = "addCCI()", 
+                                                                       "Chande Momentum Oscillator" = "addCMO()", 
+                                                                       "Relative Strength Indicator" = "addRSI()", 
+                                                                       "Simple Moving Average" = "addSMA()", 
+                                                                       "Weighted Moving Average" = "addWMA()", 
+                                                                       "Stochastic Momentum Index" = "addSMI()", 
+                                                                       "Moving Average Convergence Divergence" = "addMACD()", 
+                                                                       "Rate of Change" = "addROC()", 
+                                                                       "Momentum" = "addMomentum()"))
                                         ), 
                            mainPanel(
                              introBox(plotOutput("plot", height = 550) %>% 
